@@ -110,6 +110,7 @@ import MobileSidebar from "./MobileSidebar";
 import { useEffect, useState } from "react";
 import { navData } from "../../utils/config";
 import SkeletonNavBar from "./SkeletonNavbar";
+import Image from "next/image";
 
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -141,7 +142,7 @@ const NavBar = () => {
 
   return (
     <div
-    className={`top-0 shadow-lg left-0 z-40 flex w-full items-center bg-transparent
+    className={`top-0 shadow-lg px-4 left-0 z-40 flex w-full items-center bg-transparent
     ${
       sticky
       ? "fixed z-[9999] bg-zinc-200 bg-opacity-30 backdrop-blur-sm shadow-sticky backdrop:blur-sm transition transform translate-y-0"
@@ -152,17 +153,17 @@ const NavBar = () => {
       {isLoading ? (
         <SkeletonNavBar />
       ) : (
-        <header className="w-full h-fit py-4 px-4 md:px-14 flex justify-between items-center">
+        <header className="w-full h-fit py-2 px-3 md:px-7 flex justify-between items-center">
           <Link href="/" className="font-mono">
-            <h3 className="text-3xl font-bold">Logo</h3>
+            <div><Image src="/Logo.svg" alt="Logo" width={50} height={40} /></div>
           </Link>
 
           {isMobile && <MobileSidebar />}
 
           {!isMobile && (
             <NavigationMenu>
-              <NavigationMenuList className="md:flex md:space-x-4">
-                {Object.entries(navData).map(([category, items], index) => (
+              <NavigationMenuList className="md:flex">
+                {Object.entries(navData).map(([category, items]:any, index) => (
                   <NavigationMenuItem key={index}>
                     {Array.isArray(items) ? (
                       <a href={category}>
@@ -173,6 +174,7 @@ const NavBar = () => {
                     ) : (
                       <Link href={items.link} legacyBehavior passHref>
                         <NavigationMenuLink
+                        
                           className={`${navigationMenuTriggerStyle()}`}
                         >
                           {items.text}
@@ -180,8 +182,8 @@ const NavBar = () => {
                       </Link>
                     )}
                     {Array.isArray(items) && (
-                      <NavigationMenuContent className="md:w-[400px] lg:w-[400px] text-center lg:flex lg:flex-col lg:space-y-3">
-                        <ul className="grid gap-3 p-6 md:grid-cols-2 lg:grid-cols-3">
+                      <NavigationMenuContent className="md:w-[400px] lg:w-[500px] text-center lg:flex lg:flex-col lg:space-y-3">
+                        <ul className="grid gap-1 p-6 md:grid-cols-2 lg:grid-cols-3 text-center">
                           {items.map((item, itemIndex) => (
                             <li key={itemIndex}>
                               <Link href={`/categories${item.link}`}>{item.text}</Link>

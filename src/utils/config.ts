@@ -92,8 +92,9 @@ export const navData = {
     { text: "Introduction", link: "/action" },
     { text: "Long Introduction", link: "/adventure" },
     { text: "Introduction URDU", link: "/arcade" },
+    {links: "/arcade"},
   ],
-  Community: {
+  "Find Yourself": {
     link: "/community",
     text: "Find Yourself",
   },
@@ -104,29 +105,34 @@ export const navData = {
     { text: "What is - How to", link: "/board-game" },
     { text: "Motivation", link: "/card" },
     { text: "Main kia karoon", link: "/casual" },
-    { text: "Music", link: "/music" },
-    { text: "Puzzle", link: "/puzzle" },
-    { text: "Racing", link: "/racing" },
-    { text: "Role Playing", link: "/role-playing" },
-    { text: "Simulation", link: "/simulation" },
-    { text: "Sport", link: "/sport" },
-    { text: "Strategy", link: "/strategy" },
-    { text: "Survival", link: "/survival" },
   ],
-  "How To sTeach": [
-    { text: "University Speech", link: "/art-&-design" },
-    { text: "in House Training", link: "/books-&-references" },
-    { text: "Entrepreneurship", link: "/browser" },
-    { text: "What is - How to", link: "/board-game" },
-    { text: "Motivation", link: "/card" },
-    { text: "Main kia karoon", link: "/casual" },
-    { text: "Music", link: "/music" },
-    { text: "Puzzle", link: "/puzzle" },
-    { text: "Racing", link: "/racing" },
-    { text: "Role Playing", link: "/role-playing" },
-    { text: "Simulation", link: "/simulation" },
-    { text: "Sport", link: "/sport" },
-    { text: "Strategy", link: "/strategy" },
-    { text: "Survival", link: "/survival" },
+  Books: [
+    { text: "Books By Rehan", link: "/art-&-design" },
+    { text: "Recommended Books", link: "/books-&-references" },
   ],
+  "500 Mutual Friend Experiment": [
+    { text: "Stories", link: "/art-&-design" },
+    { text: "Why", link: "/books-&-references"},
+    { text: "Winners", link: "/books-&-references"},
+  ],
+  "How to Business": [
+    { text: "Steps To Start Your Business", link: "/art-&-design" },
+  ],
+
+  "Shows": [
+    { text: "The Entrepreneurs Show", link: "/art-&-design" },
+    { text: "ShePreneur SHow", link: "/books-&-references"},
+    { text: "Meet An American", link: "/books-&-references"},
+    { text: "Meet a palestinian", link: "/art-&-design" },
+    { text: "Connecting The World", link: "/books-&-references"},
+    { text: "Meet a Pakistani", link: "/books-&-references"},
+    { text: "Live Video Feed", link: "/art-&-design" },
+    { text: "Fb Videos", link: "/books-&-references"},
+  ],
+
+  "ABCD of Freelancing": {
+    link: "/community",
+    text: "ABCD of Freelancing",
+  },
+
 };  
