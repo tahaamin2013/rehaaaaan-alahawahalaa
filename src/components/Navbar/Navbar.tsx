@@ -182,7 +182,7 @@ const NavBar = () => {
                       </Link>
                     )}
                     {Array.isArray(items) && (
-                      <NavigationMenuContent className="md:w-[400px] lg:w-[500px] text-center lg:flex lg:flex-col lg:space-y-3">
+                       <NavigationMenuContent className="md:w-[400px] lg:w-[500px] text-center lg:flex lg:flex-col lg:space-y-3">
                         <ul className="grid gap-1 p-6 md:grid-cols-2 lg:grid-cols-3 text-center">
                           {items.map((item, itemIndex) => (
                             <li key={itemIndex}>

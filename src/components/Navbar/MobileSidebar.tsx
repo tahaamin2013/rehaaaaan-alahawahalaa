@@ -44,12 +44,12 @@ const MobileSidebar = () => {
 
             return (
               <li key={key}>
-                <Link href={item.link}>{item.text}</Link>
+                <Link href={item.link} className="text-black">{item.text}</Link>
               </li>
             );
           })}
         </ul>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1">
           {Object.keys(navData).map((key) => {
             // @ts-expect-error
             const item = navData[key];
@@ -68,7 +68,7 @@ const MobileSidebar = () => {
                     <AccordionContent>
                       {item.map((subItem, index) => (
                         <li key={index}>
-                          <Link href={subItem.link}>{subItem.text}</Link>
+                          <Link href={subItem.link} legacyBehavior passHref>{subItem.text}</Link>
                         </li>
                       ))}
                     </AccordionContent>
