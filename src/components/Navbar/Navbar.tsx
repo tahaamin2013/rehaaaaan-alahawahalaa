@@ -109,12 +109,10 @@ import Link from "next/link";
 import MobileSidebar from "./MobileSidebar";
 import { useEffect, useState } from "react";
 import { navData } from "../../utils/config";
-import SkeletonNavBar from "./SkeletonNavbar";
 import Image from "next/image";
 
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
   const [sticky, setSticky] = useState<boolean>(false);
 
   function handleStickyNavbar() {
@@ -130,11 +128,6 @@ const NavBar = () => {
 
     handleResize();
     window.addEventListener("resize", handleResize);
-
-    setTimeout(() => {
-      setIsLoading(false); // After a delay, set isLoading to false to show the actual NavBar
-    }, 100); // Adjust the delay time as needed (1000 milliseconds = 1 second)
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -150,9 +143,7 @@ const NavBar = () => {
     } 
     `}
     >
-      {isLoading ? (
-        <SkeletonNavBar />
-      ) : (
+
         <header className="w-full h-fit py-2 px-3 md:px-7 flex justify-between items-center">
           <Link href="/" className="font-mono">
             <div><Image src="/Logo.svg" alt="Logo" width={50} height={40} /></div>
@@ -199,7 +190,6 @@ const NavBar = () => {
           )}
 
         </header>
-      )}
     </div>
   );
 };

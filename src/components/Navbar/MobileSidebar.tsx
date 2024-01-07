@@ -67,9 +67,9 @@ const MobileSidebar = () => {
                     </AccordionTrigger>
                     <AccordionContent>
                       {item.map((subItem, index) => (
-                        <li key={index}>
-                          <Link href={subItem.link} legacyBehavior passHref>{subItem.text}</Link>
-                        </li>
+                        <div key={index}>
+                          <div>{subItem.text}</div>
+                        </div>
                       ))}
                     </AccordionContent>
                   </AccordionItem>
