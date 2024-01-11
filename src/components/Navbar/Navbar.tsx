@@ -110,6 +110,7 @@ import MobileSidebar from "./MobileSidebar";
 import { useEffect, useState } from "react";
 import { navData } from "../../utils/config";
 import Image from "next/image";
+import ThemeToggler from "../themes";
 
 const NavBar = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -153,7 +154,7 @@ const NavBar = () => {
 
           {!isMobile && (
             <NavigationMenu>
-              <NavigationMenuList className="md:flex">
+              <NavigationMenuList>
                 {Object.entries(navData).map(([category, items]:any, index) => (
                   <NavigationMenuItem key={index}>
                     {Array.isArray(items) ? (
@@ -173,11 +174,11 @@ const NavBar = () => {
                       </Link>
                     )}
                     {Array.isArray(items) && (
-                       <NavigationMenuContent className="md:w-[400px] lg:w-[500px] text-center lg:flex lg:flex-col lg:space-y-3">
-                        <ul className="grid gap-1 p-6 md:grid-cols-2 lg:grid-cols-3 text-center">
+                       <NavigationMenuContent>
+                        <ul className="p-6 text-left">
                           {items.map((item, itemIndex) => (
                             <li key={itemIndex}>
-                              <Link href={`/categories${item.link}`}>{item.text}</Link>
+                              <Link href={`/categories/${item.link}`}>{item.text}</Link>
                             </li>
                           ))}
                         </ul>
@@ -186,9 +187,14 @@ const NavBar = () => {
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
-            </NavigationMenu>
-          )}
 
+              <div className=" ml-4">
+              <ThemeToggler />
+              </div>
+            </NavigationMenu>
+             
+          )}
+         
         </header>
     </div>
   );
