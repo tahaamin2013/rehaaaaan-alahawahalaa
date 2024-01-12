@@ -139,7 +139,7 @@ const NavBar = () => {
     className={`top-0 shadow-lg px-4 left-0 z-40 flex w-full items-center bg-transparent
     ${
       sticky
-      ? "fixed z-[9999] bg-zinc-200 bg-opacity-30 backdrop-blur-sm shadow-sticky backdrop:blur-sm transition transform translate-y-0"
+      ? "fixed z-[9999] bg-zinc-200 dark:bg-transparent bg-opacity-30 backdrop-blur-sm shadow-sticky backdrop:blur-sm transition transform translate-y-0"
       : ""
     } 
     `}
