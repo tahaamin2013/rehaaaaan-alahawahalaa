@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white text-black dark:text-white dark:bg-black transition-all duration-300 `}>
+      <body className={`${inter.className} bg-white text-black dark:text-white dark:bg-black transition-all duration-300 overflow-x-hidden`}>
 
       <NextThemeProvider>
       <Particles
