@@ -23,10 +23,10 @@ const HeroSection = () => {
               <p className="font-normal text-2xl md:text-3xl">My Aim is Love, <br className="block md:hidden" /> No Poverty</p>
           </div>
         
-        <div className="w-[512.17px] h-[661px] relative">
+        <div className="w-[512px] h-[661px] relative">
   <div className="w-[360px] h-[360px] left-[150.05px] top-[115.76px] absolute origin-top-left rotate-[24.27deg] rounded-[17px] border-4 border-black dark:border-white" />
   <div className="w-[360px] h-[360px] left-[179.44px] top-[178.23px] absolute origin-top-left rotate-[24.27deg] bg-violet-700 rounded-[17px] border-4 border-black dark:border-white" />
-  <Image width={900} height={900} alt="Hero Section Image" className="w-[450px] h-[645px] left-[55.12px] top-0 absolute" src="/Rehan.png" />
+  <Image width={900} height={900} alt="Hero Section Image" draggable="false" className="w-[450px] h-[645px] left-[55.12px] top-0 absolute" src="/Rehan.png" />
 </div>
         </div> 
         </div>
