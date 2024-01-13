@@ -11,7 +11,7 @@ const HeroSection = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="mt-6 md:-mt-10 items-center mx-0 md:mx-16 text-black dark:text-white justify-center gap-64">
+      <div className="mt-6 md:-mt-10 items-center mx-0 md:mx-20 text-black dark:text-white justify-center gap-64">
         <div className="flex flex-col md:flex-row justify-between w-full text-5xl md:text-7xl">
           <div className="flex flex-col justify-center text-center md:text-left font-extrabold">
           <TypeAnimation
@@ -24,9 +24,9 @@ const HeroSection = () => {
           </div>
         
         <div className="w-[512px] h-[661px] relative">
-  <div className="w-[320px] h-[360px] md:w-[360px] md:h-[360px] left-[150.05px] top-[115.76px] absolute origin-top-left rotate-[24.27deg] rounded-[17px] border-4 border-black dark:border-white" />
-  <div className="w-[316px] h-[360px] md:w-[360px] md:h-[360px] left-[179.44px] top-[178.23px] absolute origin-top-left rotate-[24.27deg] bg-violet-700 rounded-[17px] border-4 border-black dark:border-white" />
-  <Image width={900} height={900} alt="Hero Section Image" draggable="false" className="w-[420px] h-[630px] md:w-[450px] md:h-[645px] left-[37px] md:left-[55.12px] top-0 absolute" src="/Rehan.png" />
+  <div className="w-[320px] h-[360px] md:w-[278px] md:h-[280px] left-[150.05px] top-[115.76px] absolute origin-top-left rotate-[24.27deg] rounded-[17px] border-4 border-black dark:border-white" />
+  <div className="w-[316px] h-[360px] md:w-[278px] md:h-[280px] left-[179.44px] top-[178.23px] absolute origin-top-left rotate-[24.27deg] bg-violet-700 rounded-[17px] border-4 border-black dark:border-white" />
+  <Image width={900} height={900} alt="Hero Section Image" draggable="false" className="w-[420px] h-[630px] mt-0 md:mt-[70px] md:w-[345px] md:h-[470px] left-[37px] md:left-[82px] top-0 absolute" src="/Rehan.png" />
 </div>
         </div> 
         </div>
