@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -13,14 +15,15 @@ const HeroSection = () => {
     >
       <div className="mt-6 sm:-mt-10 items-center mx-0 sm:mx-20 text-black dark:text-white justify-center gap-64">
         <div className="flex flex-col sm:flex-row justify-between w-full text-5xl sm:text-7xl">
-          <div className="flex flex-col justify-center text-center sm:text-left font-extrabold">
+          <div className="flex flex-col justify-center text-center items-center sm:items-start  sm:text-left font-extrabold">
           <TypeAnimation
                 sequence={["Love Humans", 1000, "Think Positive", 1000]}
                 wrapper="span"
                 speed={50}
                 repeat={Infinity}
               />
-              <p className="font-normal text-2xl sm:text-3xl">My Aim is Love, <br className="block sm:hidden" /> No Poverty</p>
+              <p className="font-normal text-2xl sm:text-3xl">My Aim is Love, No Poverty</p>
+              <Button className="w-fit mt-2"><Link href="about-me">About Me</Link></Button>
           </div>
         
           <div className="w-[512px] h-[661px] relative">
