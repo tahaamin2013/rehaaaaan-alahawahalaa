@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar/Navbar'
 import NextThemeProvider from '@/providers/theme-provider';
 import Particles from '@/components/particles';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +29,8 @@ export default function RootLayout({
     />
         <Navbar />
         {children}
+        <Footer />
+        
         </NextThemeProvider>
         </body>
     </html>
