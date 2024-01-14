@@ -147,7 +147,7 @@ const NavBar = () => {
 
         <header className="w-full h-fit py-2 px-3 sm:px-7 flex justify-between items-center">
           <Link href="/" className="font-mono">
-            <div><Image src="/Logo.svg" alt="Logo" width={50} height={40} /></div>
+            <Image src="/Logo.svg" alt="Logo" width={50} height={40} />
           </Link>
 
           {isMobile && <MobileSidebar />}
