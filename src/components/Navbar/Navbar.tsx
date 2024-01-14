@@ -145,10 +145,9 @@ const NavBar = () => {
     `}
     >
 
-        <header className="w-full h-fit py-2 px-3 sm:px-7 flex justify-between items-center">
+        <header className="w-full h-fit py-2 px-3 md:px-7 flex justify-between items-center">
           <Link href="/" className="font-mono">
-            {/* <Image src="/Logo.svg" alt="Logo" width={50} height={40} /> */}
-          Logo
+            <div><Image src="/Logo.svg" alt="Logo" width={50} height={40} /></div>
           </Link>
 
           {isMobile && <MobileSidebar />}
@@ -191,7 +190,7 @@ const NavBar = () => {
 
               <div className=" ml-4">
               <ThemeToggler />
-              </div>
+              </div>  
             </NavigationMenu>
              
           )}
