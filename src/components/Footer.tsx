@@ -3,28 +3,30 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#2563eb] py-6 text-white flex flex-col text-center items-center">
-      <div>© 2022 Rehan Allahwala. All Rights Reserved.</div>
-      <div className="text-xs flex flex-wrap text-center gap-0">
-        <Link href="sffsd">Who is Rehan Allahwala</Link>|
-        <Link href="sffsd">How To Teach</Link>|
-        <Link href="sffsd">Books</Link>|
-        <Link href="sffsd">500 Mutual Friend Experiment</Link>|
-        <Link href="sffsd">Contact</Link>|
-        <Link href="sffsd">Press</Link>|
-        <Link href="sffsd">Startup</Link>|
-        <Link href="sffsd">Ethics Series</Link>|
-        <Link href="sffsd">Canva group</Link>|
-        <Link href="sffsd">Chainak</Link>|
-        <Link href="sffsd">Abdullah Bot</Link>|
-        <Link href="sffsd">FBProfile</Link>|
-        <Link href="sffsd">LinkedIn Profile</Link>|
-        <Link href="sffsd">ChatGPT</Link>|
-        <Link href="sffsd">ABCD of Freeabcd</Link>|
-        <Link href="sffsd">Socials</Link>|
-        <Link href="sffsd">Meetup</Link>|
-      </div>
+<footer className="bg-transparent rounded-lg shadow dark:bg-transparent m-4 border border-black/55 dark:border-[#252525]">
+    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Your Website Name</span>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">About</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
+                </li>
+                <li>
+                    <a href="#" className="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <hr className="my-6 border-black/55 sm:mx-auto dark:border-[#252525] lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Your Website Name. All Rights Reserved.</span>
     </div>
+</footer>
+
   );
 };
 

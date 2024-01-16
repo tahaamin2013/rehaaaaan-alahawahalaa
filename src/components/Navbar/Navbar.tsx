@@ -137,7 +137,7 @@ const NavBar = () => {
   return (
     <div>
       <header
-        className={`top-0 shadow-lg left-0 z-40 flex w-full items-center bg-transparent
+        className={`top-0 shadow-lg left-0 z-40 flex w-full items-center justify-between py-1
         ${
           sticky
             ? "!fixed inset-x-0 border-gray-200 bg-white/75 backdrop-blur-lg transition-all dark:shadow-none dark:backdrop-blur-none !z-[9999] from-white/40 dark:bg-black/40"
@@ -145,14 +145,14 @@ const NavBar = () => {
         }
         `}
       >
-          <Link href="/" className="font-mono">
+          <Link href="/" className="font-mono ml-6">
             <div><Image src="/Logo.svg" alt="Logo" width={50} height={40} /></div>
           </Link>
 
           {isMobile && <MobileSidebar />}
 
           {!isMobile && (
-            <NavigationMenu>
+            <NavigationMenu className="mr-5">
               <NavigationMenuList>
                 {Object.entries(navData).map(([category, items]:any, index) => (
                   <NavigationMenuItem key={index}>
