@@ -140,7 +140,7 @@ const NavBar = () => {
     ${
       sticky
       ? "fixed z-[9999] bg-zinc-200 dark:bg-transparent bg-opacity-30 backdrop-blur-sm shadow-sticky backdrop:blur-sm transition transform translate-y-0"
-      : ""
+      : "absolute"
     } 
     `}
     >
