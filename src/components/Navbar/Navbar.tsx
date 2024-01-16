@@ -135,17 +135,16 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div
-    className={`top-0 shadow-lg px-4 left-0 z-40 flex w-full items-center bg-transparent
-    ${
-      sticky
-      ? "fixed z-[9999] bg-zinc-200 dark:bg-transparent bg-opacity-30 backdrop-blur-sm shadow-sticky backdrop:blur-sm transition transform translate-y-0"
-      : "absolute"
-    } 
-    `}
-    >
-
-        <header className="w-full h-fit py-2 px-3 md:px-7 flex justify-between items-center">
+    <div>
+      <header
+        className={`top-0 shadow-lg left-0 z-40 flex w-full items-center bg-transparent
+        ${
+          sticky
+            ? "!fixed inset-x-0 border-gray-200 bg-white/75 backdrop-blur-lg transition-all dark:shadow-none dark:backdrop-blur-none !z-[9999] from-white/40 dark:bg-black/40"
+            : "absolute"
+        }
+        `}
+>
           <Link href="/" className="font-mono">
             <div><Image src="/Logo.svg" alt="Logo" width={50} height={40} /></div>
           </Link>
