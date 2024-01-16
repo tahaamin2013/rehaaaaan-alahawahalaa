@@ -144,7 +144,7 @@ const NavBar = () => {
             : "absolute"
         }
         `}
->
+      >
           <Link href="/" className="font-mono">
             <div><Image src="/Logo.svg" alt="Logo" width={50} height={40} /></div>
           </Link>
