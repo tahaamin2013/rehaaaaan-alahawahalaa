@@ -1,11 +1,9 @@
 import HeroSection from "@/components/herosection/HeroSection";
-import Particles from "../components/particles";
 
 export default function Home() {
   return (
    <div>
 <HeroSection/>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloremque placeat iste, odit expedita obcaecati asperiores, necessitatibus quod corrupti laboriosam illum. Natus odit blanditiis amet expedita a omnis non aperiam.loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem
 </div>
   )
 }

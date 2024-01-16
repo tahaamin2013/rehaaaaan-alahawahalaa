@@ -136,11 +136,11 @@ const NavBar = () => {
 
   return (
     <div>
-      <header
+      {/* <header
         className={`top-0 shadow-lg left-0 z-40 flex w-full items-center justify-between py-1
         ${
           sticky
-            ? "!fixed inset-x-0 border-gray-200 bg-white/75 backdrop-blur-lg transition-all dark:shadow-none dark:backdrop-blur-none !z-[9999] from-white/40 dark:bg-black/40"
+            ? "!fixed inset-x-0 border-gray-200 bg-white/75 backdrop-blur-lg transition-all dark:shadow-none dark:backdrop-blur-none from-white/40 dark:bg-black/40"
             : "absolute"
         }
         `}
@@ -194,7 +194,8 @@ const NavBar = () => {
              
           )}
          
-        </header>
+        </header> */}
+        Navbar
     </div>
   );
 };

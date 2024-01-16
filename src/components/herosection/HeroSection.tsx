@@ -13,9 +13,9 @@ const HeroSection = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="mt-6 sm:-mt-10 items-center mx-0 sm:mx-20 text-black dark:text-white justify-center gap-64">
+      <div className="mt-16 sm:-mt-10 items-center mx-0 sm:mx-20 text-black dark:text-white justify-center">
         <div className="flex flex-col sm:flex-row justify-between w-full text-5xl sm:text-7xl">
-          <div className="flex flex-col justify-center text-center items-center sm:items-start  sm:text-left font-extrabold">
+          <div className="flex flex-col justify-center text-center items-center sm:items-start sm:text-left font-extrabold">
           <TypeAnimation
                 sequence={["Love Humans", 1000, "Think Positive", 1000]}
                 wrapper="span"
@@ -26,10 +26,10 @@ const HeroSection = () => {
               <Button className="w-fit mt-2"><Link href="about-me">About Me</Link></Button>
           </div>
         
-          <div className="w-[512px] h-[661px] relative">
-  <div className="w-[278px] h-[280px]  sm:w-[278px] sm:h-[280px] left-[150.05px] top-11 sm:top-[115.76px] absolute origin-top-left rotate-[24.27deg] rounded-[17px] border-4 border-black dark:border-white" />
-  <div className="w-[278px] h-[280px] sm:w-[278px] sm:h-[280px] left-[179.44px] top-28 sm:top-[178.23px] absolute origin-top-left rotate-[24.27deg] bg-violet-700 rounded-[17px] border-4 border-black dark:border-white" />
-  <Image width={900} height={900} alt="Hero Section Image" draggable="false" className="w-[345px] h-[470px] mt-[3px] sm:mt-[70px] sm:w-[345px] sm:h-[470px] left-[85px] sm:left-[88px] top-0 absolute" src="/Rehan.png" />
+          <div className="w-[300px] h-[436px] sm:w-[512px] sm:h-[661px] relative">
+  <div className="w-[214px] h-[240px]  sm:w-[278px] sm:h-[280px] left-[150.05px] top-11 sm:top-[115.76px] absolute origin-top-left rotate-[24.27deg] rounded-[17px] border-4 border-black dark:border-white" />
+  <div className="w-[198px] h-[240px] sm:w-[278px] sm:h-[280px] left-[179.44px] top-28 sm:top-[178.23px] absolute origin-top-left rotate-[24.27deg] bg-violet-700 rounded-[17px] border-4 border-black dark:border-white" />
+  <Image width={900} height={900} alt="Hero Section Image" draggable="false" className="w-[280px] h-[384px] mt-[22px] sm:mt-[70px] sm:w-[345px] sm:h-[470px] left-[76px] sm:left-[88px] top-0 absolute" src="/Rehan.png" />
 </div>
         </div> 
         </div>
