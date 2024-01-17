@@ -43,6 +43,9 @@ const HeroSection = () => {
               height={900}
               alt="Hero Section Image"
               draggable="false"
+              loading="lazy"
+              decoding="async"
+              data-nimg="1"
               className="w-[280px] h-[384px] mt-[22px] sm:mt-[70px] sm:w-[345px] sm:h-[470px] left-[76px] sm:left-[88px] top-0 absolute"
               src="/Rehan.png"
             />
