@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import IconsBar from "./IconsBar";
 
 const Footer = () => {
   return (
@@ -28,8 +29,9 @@ const Footer = () => {
             </ul>
         </div>
         <hr className="my-6 border-black/55 sm:mx-auto dark:border-[#252525] lg:my-8" />
-        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2024 Rehan Allahwala. All Rights Reserved.
+        <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex sm:flex-row flex-col justify-between">
+          <div>© 2024 Rehan Allahwala. All Rights Reserved.</div>
+          <div><IconsBar /></div>
           </span>
     </div>
 </footer>

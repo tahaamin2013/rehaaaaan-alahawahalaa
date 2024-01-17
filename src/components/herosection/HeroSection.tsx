@@ -5,6 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { Button } from "@nextui-org/button";
 import Link from "next/link";
+import IconsBar from "../IconsBar";
 
 const HeroSection = () => {
   return (
@@ -33,6 +34,9 @@ const HeroSection = () => {
                 About Me
               </Link>
             </Button>
+           <div className="mt-4">
+           <IconsBar />
+           </div>
           </div>
 
           <div className="w-[300px] h-[436px] sm:w-[512px] sm:h-[661px] relative">
