@@ -3,6 +3,7 @@ import { FaInstagram } from "react-icons/fa";
 import { RiTwitterXFill } from "react-icons/ri";
 import { MdOutlineFacebook } from "react-icons/md";
 import { SlSocialYoutube } from "react-icons/sl";
+import { FaLinkedin } from "react-icons/fa6";
 import { Tooltip } from "@nextui-org/tooltip";
 import Link  from 'next/link';
 const IconsBar = () => {
@@ -12,7 +13,7 @@ const IconsBar = () => {
                   <Tooltip content="Instagram">
                     <Link
                       target="_blank"
-                      href="https://www.instagram.com/alightmotion"
+                      href="https://www.instagram.com/rehanallahwala/"
                     >
                       <FaInstagram
                         size={20}
@@ -24,7 +25,7 @@ const IconsBar = () => {
                   <Tooltip content="Twitter">
                     <Link
                       target="_blank"
-                      href="https://twitter.com/alightcreative"
+                      href="https://twitter.com/rehanallahwala?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
                     >
                       <RiTwitterXFill
                         size={20}
@@ -44,13 +45,23 @@ const IconsBar = () => {
                       />
                     </Link>
                   </Tooltip>
-
                   <Tooltip content="Youtube">
                     <Link
                       target="_blank"
                       href="https://www.youtube.com/@rehanallahwala"
                     >
                       <SlSocialYoutube
+                        size={20}
+                        className="hover:scale-125 transition-all w-8"
+                      />
+                    </Link>
+                  </Tooltip>
+                  <Tooltip content="LinkedIn">
+                    <Link
+                      target="_blank"
+                      href="https://www.youtube.com/@rehanallahwala"
+                    >
+                      <FaLinkedin
                         size={20}
                         className="hover:scale-125 transition-all w-8"
                       />
