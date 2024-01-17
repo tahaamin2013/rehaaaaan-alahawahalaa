@@ -36,7 +36,7 @@ const IconsBar = () => {
                   <Tooltip content="Facebook">
                     <Link
                       target="_blank"
-                      href="https://www.facebook.com/alightcreative"
+                      href="https://www.facebook.com/rehan33"
                     >
                       <MdOutlineFacebook
                         size={20}
