@@ -48,7 +48,7 @@ const IconsBar = () => {
                   <Tooltip content="Youtube">
                     <Link
                       target="_blank"
-                      href="https://youtube.com/alightmotion"
+                      href="https://www.youtube.com/@rehanallahwala"
                     >
                       <SlSocialYoutube
                         size={20}
