@@ -23,7 +23,7 @@ const HeroSection = () => {
                 repeat={Infinity}
               />
               <p className="font-normal text-2xl sm:text-3xl">My Aim is Love, No Poverty</p>
-              <Button className="w-fit mt-2 bg-primary text-white"><Link href="about-me">About Me</Link></Button>
+              <Button className="w-fit mt-2 bg-primary text-white"><Link href="about-me" className="w-full h-full text-center flex items-center">About Me</Link></Button>
           </div>
         
           <div className="w-[300px] h-[436px] sm:w-[512px] sm:h-[661px] relative">
