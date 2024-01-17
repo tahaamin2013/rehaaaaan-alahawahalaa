@@ -1,10 +1,12 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/Navbar/Navbar'
-import NextThemeProvider from '@/providers/theme-provider';
-import Particles from '@/components/particles';
-import Footer from '@/components/Footer';
+import Navbar from '@/src/components/Navbar/Navbar'
+import NextThemeProvider from '@/src/providers/theme-provider';
+import Particles from '@/src/components/particles';
+import Footer from '@/src/components/Footer';
+import ScrollToTopButton from '@/src/components/UpGoingButton';
+import { Providers } from './providers';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,13 +25,16 @@ export default function RootLayout({
       <body className={`${inter.className} bg-white text-black dark:text-white dark:bg-black transition-all duration-300 overflow-x-hidden`}>
 
       <NextThemeProvider>
+      
       <Particles
       className="absolute inset-0 -z-10 animate-fade-in"
       quantity={100}
     />
         <Navbar />
         {children}
+        <ScrollToTopButton />
         <Footer />
+        
         </NextThemeProvider>
         </body>
     </html>
